@@ -1,5 +1,5 @@
 ---
-title: useClickAway阅读源码
+title: useClickAway源码阅读笔记
 group:
   title: ahooks
 nav:
@@ -132,3 +132,7 @@ export default function useClickAway(
      onClickAwayRef.current(event);
    };
    ```
+
+## 总结
+
+`@alitajs/antd-mobile-plus`中`Popup`组件就是使用了`useClickAway`来完成其他点击其他区域关闭弹出框的。该组件主要是使用了`document.addEventListener`来监听事件，判断点击目标组件是否包含了传入组件来处理回调函数的。
