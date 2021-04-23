@@ -1,6 +1,7 @@
 ---
 title: useClickAway源码阅读笔记
 group:
+  path: /ahooks
   title: ahooks
 nav:
   title: HTML 5
